@@ -125,7 +125,7 @@ jobs:
             echo "DEVICE_MAKEFILE=omni_${{ inputs.DEVICE_NAME }}" >> $GITHUB_ENV
         else
             echo "No recovery makefile file found!"
-        fi
+        if
       continue-on-error: true
 
     - name: Fixed Missing Fonts
